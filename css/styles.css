@@ -1,0 +1,113 @@
+#contenedor{
+    background: aqua;
+    width: 1000px;
+    height: 1000px;
+    text-align: center;
+    margin: 100px auto;
+    position: relative;
+    z-index: 0;
+}
+
+#contenedor .cara{
+    position: absolute;
+    top: 30%;
+    right: 338px;
+    z-index: -1;
+    transition: .4s;
+}
+
+#contenedor .oreja-iz{
+    position: absolute;
+    top: 32%;
+    left: 322px;
+    z-index: -5;
+    transition: .4s;
+}
+
+#contenedor .oreja-dr{
+    position: absolute;
+    right: 295px;
+    top: 32%;
+    z-index: -5;
+    transition: .4s;
+}
+
+#contenedor .ojo-iz{
+    position: absolute;
+    top: 355px;
+    left: 423px;
+    z-index: 0;
+    transition: .4s;
+}
+
+#contenedor .ojo-dr{
+    position: absolute;
+    top: 355px;
+    right: 405px;
+    z-index: 0;
+    transition: .4s;
+}
+
+#contenedor .nariz{
+    position: absolute;
+    top: 412px;
+    left: 442px;
+    z-index: 2;
+}
+
+#contenedor .bigote{
+    position: absolute;
+    bottom: 390px;
+    left: 419px;
+    z-index: 1;
+    transition: .4s;
+}
+
+#contenedor .pie-iz{
+    position: absolute;
+    bottom: 298px;
+    left: 370px;
+    z-index: -5;
+}
+
+#contenedor .pie-dr{
+    position: absolute;
+    bottom: 298px;
+    right: 342px;
+    z-index: -5;
+}
+
+#contenedor .sombrero{
+    position: absolute;
+    top: 200px;
+    left: 386px;
+    z-index: 0;
+    transition: .4s;
+}
+
+#contenedor:hover .bigote{
+    /* transform: translateY(-262px) */
+    transform: rotate(180deg);
+}
+
+#contenedor:hover .sombrero{
+    /* transform: translateY(300px); */
+}
+
+#contenedor:hover .ojo-dr{
+    transform: translateX(113px);
+}
+
+#contenedor:hover .ojo-iz{
+    transform: translateX(-110px);
+}
+
+#contenedor:hover .oreja-dr{
+    transform: translateX(-100px);
+    z-index: 50;
+}
+
+#contenedor:hover .oreja-iz{
+    transform: translateX(100px);
+    z-index: 50;
+}
